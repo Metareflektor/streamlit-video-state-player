@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "streamlit-video-state-player"
+version = "0.1.0"
+description = "Streamlit video component with time/frame tracking and bidirectional control"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Dominik Wassermann" }]
+dependencies = ["streamlit>=1.37.0"]
+
+[project.optional-dependencies]
+dev = ["plotly>=5.0.0", "pandas>=1.0.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["streamlit_video_state_player"]
+
+[tool.hatch.build.targets.wheel.shared-data]
+"streamlit_video_state_player/frontend" = "streamlit_video_state_player/frontend"
