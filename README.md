@@ -25,3 +25,6 @@ print(f"Time: {state.current_time}s, Frame: {state.frame_number}")
 - Seek video from Python (for plot sync)
 - Auto-detects FPS
 - Works with local files
+## Screenshot
+
+![Screenshot](screenshot.png)
